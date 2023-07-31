@@ -1,39 +1,25 @@
+### Phase-2-Code-Challenge-Bot-Battlr
+Bot-battlr is a React is galactic web app that will allow them to browse through a list of robots, view a robot's details, and, enlist a bot into their army. etting Started with Create React App
+## Project setup
 
-# Phase-2-Code-Challenge-Bank-of-Flatiron
-The Bank of flatiron is a React Application that displays list of the recent bank transcations and other features .
+### Prerequisites
+create a new app in your local machine
+* I have added the following scripts in the package json ( start": "PORT=8000 react-scripts start", "server": "json-server --watch db.json -p 8001"and )
 
-# Set up
- To create the Application run :npx create-react-app bank-of-flatiron
- cd bank-of-flatiron
- Since when you run json-server --watch db.json the app run at port 3000, we add the following scripts in the package.json 
- "start": "PORT=8000 react-scripts start",
- "server": "json-server --watch db.json -p 8001"
- You can now run
- Run npm run server.This will run the backend on port 8001
- create Db.json this will load at(http://localhost:8001) 
- In another terminal run npm start. The react app will run on port 8000
+* To run the backend *run npm install 
+* run server
+ * Test your server by visiting this route in the browser: http://localhost:8001/bots 
+ * In a different terminal * run npm start (start :Port 8000)
 
-open http://localhost:8001/transactions in the browser to verify that backend is working 
-
-# The base URL for your backend is: http://localhost:8001
-
-
-# Core Deliverables
-As a user, I should be able to:
-See a table of the transactions.
-Fill out and submit the form to add a new transaction. This should add the new transaction to the table as well as post the new transaction to the backend API for persistence.
-Filter transactions by typing into the search bar. Only transactions with a description matching the search term should be shown in the transactions table.
-
-
-
-# Advanced Deliverables
-
+### projectDeliverables
 As a user, I should be able to:
 
-Sort transactions alphabetically by category or description.
-Delete a transaction which will remove it from the table and delete it from the backend.
-# Author
-Grace kungu
+See profiles of all bots rendered in BotCollection. Add an individual bot to my army by clicking on it. The selected bot should render in the YourBotArmy component. The bot can be enlisted only once. The bot does not disappear from the BotCollection. Release a bot from my army by clicking on it. The bot disappears from the YourBotArmy component. Discharge a bot from their service forever, by clicking the red button marked "x", which would delete the bot both from the backend and from the YourBotArmy on the frontend.
 
-# License
-This project is licenced under: MIT
+### Advanced Deliverables
+As a user, I should be able to:
+
+Choose if I want to enlist a bot into my army or just see their data. Clicking on the card should instead display a show view (BotSpecs) for that bot, which should replace BotsCollection. BotSpecs should have two buttons: one to go back to the list view and another to enlist that bot. Your app could look like the following:
+
+### Author
+GRACE KUNGU
